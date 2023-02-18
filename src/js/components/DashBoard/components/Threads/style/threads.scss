@@ -1,0 +1,41 @@
+.threadsContainer {
+    font-size: .75rem;
+    color: #333;
+    padding: .5rem 2.5rem;
+    overflow: scroll;
+    display: flex;
+    height: 100%;
+    flex-grow: 1;
+
+    table {
+        width: 100%;
+
+        tr {
+            td {
+                padding: 0;
+                margin: 0;
+                font-size: .75rem;
+
+                button {
+                    margin: 0;
+                    font-size: .85rem;
+                    padding: .25rem;
+                    box-shadow: none;
+                }
+            }
+        }
+
+        thead tr td {
+            background: #333;
+            color: #eee;
+            padding: .25rem;
+            font-weight: bold;
+            width: 20%;
+
+            &:first-of-type,
+            &:last-of-type {
+                width: 10%;
+            }
+        }
+    }
+}

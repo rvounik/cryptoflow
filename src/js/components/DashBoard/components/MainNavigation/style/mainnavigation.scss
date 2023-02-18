@@ -1,0 +1,39 @@
+.mainNavigation {
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    margin: 1rem auto;
+
+    ul {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+}
+
+.mainNavigationItem {
+    list-style-type: none;
+    float: left;
+    background: #aaa;
+    color: #666;
+    padding: .5rem;
+    border-top: solid 1px #888;
+    border-bottom: solid 1px #666;
+    border-right: solid 1px #666;
+
+    &:first-of-type {
+        border-left: solid 1px #666;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.mainNavigationItem__active {
+    @extend .mainNavigationItem;
+
+    background: #ddd;
+    color: #333;
+    border-bottom: 0;
+}

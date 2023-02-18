@@ -1,0 +1,55 @@
+{
+    "env": {
+        "es6": true,
+        "browser": true,
+        "es2021": true,
+        "node": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true,
+            "modules": true,
+            "arrowFunctions": true,
+            "classes": true,
+            "legacyDecorators": true
+        },
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "parser": "babel-eslint"
+    },
+    "parser": "babel-eslint",
+    "plugins": [
+        "react"
+    ],
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    },
+    "ignorePatterns": ["node_modules", "src/js/helpers/ckeditor5"],
+    "rules": {
+        "react/prop-types": 0,
+        "react/display-name": 0,
+        "indent": ["error", 4, {
+            "ignoredNodes": ["TemplateLiteral"]
+        }],
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "arrow-body-style": ["error", "as-needed"],
+        "func-style": [2, "expression", { "allowArrowFunctions": true }]
+    }
+}

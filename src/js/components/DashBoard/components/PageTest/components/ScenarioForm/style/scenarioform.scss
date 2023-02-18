@@ -1,0 +1,31 @@
+.scenarioform {
+    text-align: center;
+
+    input {
+        padding: .5rem;
+        margin: .5rem;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    label {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    button {
+        padding: .25rem .5rem;
+        color: #fff;
+        background: #ff0000;
+        border: 0;
+        margin-left: 1rem;
+        border-radius: .25rem;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

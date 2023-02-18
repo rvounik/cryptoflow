@@ -1,0 +1,54 @@
+.logger {
+    display: block;
+    color: white;
+    width: 400px;
+
+    > section {
+        margin-left: auto;
+        height: 100%;
+        background: #333;
+        width: 350px;
+        border-radius: .5rem;
+        padding: 1rem;
+        box-sizing: border-box;
+        max-height: 400px;
+        overflow-y: scroll;
+        display: flex;
+        flex-direction: column-reverse;
+
+        li {
+            float: none;
+            list-style-type: none;
+            font-weight: normal;
+            line-height: .6rem;
+            font-family: monospace;
+
+            time {
+                color: #666;
+                margin-right: .5rem;
+                font-size: .6rem;
+            }
+
+            span {
+                color: #eee;
+                font-size: .7rem;
+            }
+        }
+    }
+}
+
+.error {
+    color: red !important;
+}
+
+.message {
+    color: white !important;
+}
+
+.warning {
+    color: orange !important;
+}
+
+.financial {
+    color: green !important;
+}

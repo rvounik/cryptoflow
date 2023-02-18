@@ -1,0 +1,14 @@
+.test {
+    width: 800px;
+    margin: 1rem auto;
+
+    main {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.pageControls {
+    text-align: center;
+    padding: .5rem 2.5rem;
+}
